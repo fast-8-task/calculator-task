@@ -1,0 +1,74 @@
+body {
+	background-color: #f5f5f5;
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: #c0c0c0;
+	max-width: 300px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	border: 1px solid #4b5563;
+}
+
+#screen-area {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(2, minmax(40px, auto));
+	word-wrap: break-word;
+	padding-bottom: 20px;
+	border-bottom: 1px #2f2f2f solid;
+	background-color: #2f2f2f;
+}
+
+#screen-area .currentInput {
+	text-align: right;
+	height: 8vh;
+	color: white;
+	font-size: xx-large;
+	line-height: 2;
+	word-wrap: break-word;
+}
+
+#screen-area .answerScreen {
+	text-align: right;
+	color: rgba(150, 150, 150, 0.87);
+	height: 7px;
+	line-height: 3;
+	font-size: larger;
+}
+
+.keypad {
+	display: grid;
+	grid: repeat(5, 70px) / repeat(4, 70px);
+}
+
+.keypad button {
+	outline: none;
+	border: 1px solid #010101;
+	background-color: #010101;
+	color: #c0c0c0;
+	font-size: x-large;
+}
+
+.keypad .btnoperator {
+	color: #23c7c6;
+}
+
+.btnnumber:hover {
+	background-color: #c0c0c0;
+	color: #010101;
+}
+
+.btnoperator:hover {
+	background-color: #c0c0c0;
+	color: #23c7c6;
+}
